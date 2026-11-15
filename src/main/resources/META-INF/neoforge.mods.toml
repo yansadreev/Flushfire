@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="flushfire"
+version="0.2.1-alpha"
+displayName="Flushfire"
+authors="Flushfire contributors"
+description='''Geometry-based vanilla fire on non-full blocks; Burnt lifecycle cleanup and shift-ignite for doors/gates. Experimental: requires official NeoForge build and in-game validation.''' 
+
+[[mixins]]
+config="flushfire.mixins.json"
+
+[[dependencies.flushfire]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.250,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.flushfire]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
